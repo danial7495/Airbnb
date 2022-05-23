@@ -1,0 +1,28 @@
+<div class="navigation">
+    <nav>
+      <ul class="nav-type">
+        <li><a [routerLink]="['/home']" class="active1 link">Home</a></li>
+        <li><a [routerLink]="['/place']" class="active link">places</a></li>
+        <li><a [routerLink]="['/register']"  class="active2 link">Registieren</a></li>
+        <li><a class="active3 dropNav">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <button class="close-btn">Close</button>
+        <div class="container">
+          <h1>Willkommen bei Airbnb</h1>
+          <form action="inc/login-inc.php" method="POST">
+          <input type="text" name="user" placeholder="Benutzername">
+          <input type="password" name="password" placeholder="Passwort">
+          <input type="password" name="password" placeholder="Passwort Wiederholen">
+          <input type="email" name="user" placeholder="E-mail">
+          <input type="address" name="password" placeholder="Adresse">
+          <input type="tel" name="user" placeholder="Telefonnummer">
+          <button type="submit" name="submit" class="button">Registrieren</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

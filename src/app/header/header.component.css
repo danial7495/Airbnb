@@ -1,0 +1,166 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #6a89cc, #82ccdd, #1e3799, #0a3d62,#3c6382);
+  animation: 12s myGradient infinite;
+  border-radius: 40px;
+  box-shadow: 3px 3px 20px #82ccdd;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+@keyframes myGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  margin-top: 5vw;
+  width: 30vw;
+  height: 100vh;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: white;
+}
+
+.visHidden {
+  display: none;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+}
+
+form {
+  display: grid;
+  padding: 10px;
+  height: 70%;
+  width: 30%;
+}
+
+input {
+  height: 20px;
+  border-radius: 5px;
+}
+
+/* a {
+  margin-left: 10%;
+} */
+
+
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 50px 60px;
+  font-family: verdana;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+}
+
+.navigation {
+  position:fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 30px;
+  transition: top 0.80s
+}
+
+
+.active3:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+  margin-top: -100px;
+  cursor: pointer;
+}
+
+.active2:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active1:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+@keyframes myFlash {
+  0% {
+    opacity: 1;
+    text-shadow: transparent;
+  }
+
+  50% {
+    opacity: .1;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #fff;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav-type li a {
+    padding: 20px 25px;
+    font-family:verdana;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-type li a {
+    padding: 40px 45px;
+    font-family:verdana;
+  }
+}

@@ -1,0 +1,265 @@
+body{
+  margin: 0px auto;
+  color: black;
+  border-radius: 10px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+
+}
+.ulheader {
+  display: inline;
+  margin: 15px;
+  float: right;
+
+}
+
+.headlink {
+  color: black;
+  text-decoration: none;
+}
+
+.headlink:hover {
+  color: #60a3bc;
+  text-decoration: none;
+}
+
+#airbnbFoto {
+  float: left;
+  max-width: 40px;
+}
+div.header{
+  height: 60px;
+}
+
+.mainimage {
+  background-image: url(http://images.ctfassets.net/r7p9m4b1iqbp/33DIXi6y4PqkBz1mt0Z7VX/5350b765b77e415087178c793c57fc90/rentals-coastal-cabins-oak-island-exterior-1.jpg?w=1000);
+  max-width: 1000px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 40px;
+  width: 70%;
+  display: flex;
+
+}
+.searchInput {
+  width: 700px;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 20px;
+}
+
+.sumbit {
+  height: 40px;
+  width: 70px;
+  background-color: #6a89cc;
+  color: white;
+  border-radius: 20px;
+}
+
+
+.backfoto{
+  width: 1000px;
+  height: 600px;
+}
+
+.überschrifth1{
+  margin-left: 10px;
+  margin-bottom: 1px;
+  margin-top: 5px;
+}
+
+div.item{
+border: 2px solid gainsboro;
+border-style:ridge;
+border-radius: 40px;
+max-width:fit-content;
+display: inline-block;
+margin: 10px;
+}
+
+div.container {
+ max-width: fit-content;
+ margin-left: 40px;
+}
+
+#smallimage {
+  width: 80px;
+  height: 60px;
+  border-radius: 40px;
+}
+
+p.desc {
+  display: block;
+  float: right;
+  margin: 20px;
+}
+
+#bigimage {
+  width: 800px;
+  height: 300px;
+}
+
+.airplus {
+  background-image: url(https://hips.hearstapps.com/hbu.h-cdn.co/assets/16/11/3200x2023/gallery-foyer-1.jpg?resize=480:*);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  width: 900px;
+  height: 300px;
+  margin-left: 50px;
+}
+
+.container2 {
+  padding-top: 60px;
+  padding-left: 20px;
+}
+
+
+.plush3 {
+  margin-left: 45px;
+}
+
+
+.überschrifthgallery {
+  margin-top: 30px;
+  margin-bottom: 3px;
+  color:darkgoldenrod;
+}
+
+.galleryitems {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.galleryitem {
+  /* float: left; */
+  display: grid;
+  width: 250px;
+  padding: 20px;
+  height: 350px;
+
+}
+
+#galleryimage {
+  width: 250px;
+  height: 200px;
+  border: 1x solid black;
+  border-radius: 60px;
+}
+
+.itemstitle:hover {
+  text-decoration: underline;
+}
+.itemstitle {
+  margin-top: 5px;
+  font-size: small;
+  color:darkgoldenrod;
+}
+
+.itemsdesc:hover {
+  text-decoration: underline;
+}
+.itemsdesc {
+  margin-top: -10px;
+  color: black;
+}
+
+.preis {
+  margin-top: -15px;
+  color: ghostwhite;
+}
+
+@media screen and (max-width:900px){
+  .galleryitems {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .mainimage {
+    width: 600px;
+    margin: auto;
+  }
+
+  .main-container2 {
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .airplus {
+    max-width: 500px;
+  }
+
+  .untertittle {
+    max-width: fit-content;
+  }
+
+ /*  .nav-type li a {
+    padding: 40px 45px;
+    font-family:verdana;
+  } */
+}
+
+@media screen and (max-width:600px){
+
+  .main-container {
+    margin-top: 25px;
+  }
+/*   .nav-type li a {
+    padding: 20px 25px;
+    font-family:verdana;
+  } */
+
+  .galleryitems {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .galleryitem {
+    /* float: left; */
+    display: grid;
+    width: 500px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #galleryimage {
+    width: 420px;
+    height: 200px;
+    margin-right: 90px;
+  }
+
+  .mainimage {
+    width: 450px;
+    margin: auto;
+  }
+
+  .main-container2 {
+    margin: auto;
+    max-width: 450px;
+  }
+
+
+  .airplus {
+    max-width: 400px;
+    margin-left: 10px;
+  }
+
+  .untertittle {
+    max-width: 400px;
+  }
+}
+
+/*------------------------------------------------------------------------------------*/
+
+
+
